@@ -7,7 +7,7 @@ Important Changes
 - External Elasticsearch
 - MariaDB JDBC driver
 - Dropping compose operation in favor of encode
-
+- Default player is now Paella
 
 Features
 --------
@@ -19,6 +19,7 @@ Features
 
 Configuration changes
 ---------------------
+*TBD*
 
 Release Schedule
 ----------------

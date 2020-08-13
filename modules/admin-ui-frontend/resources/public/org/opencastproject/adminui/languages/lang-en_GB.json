@@ -15,6 +15,49 @@
    "SELECT_NO_OPTION_SELECTED": "No option selected",
    "SELECT_NO_OPTIONS_AVAILABLE": "No options available",
    "YES": "Yes",
+   "COPY": "Copy to clipboard",
+   "LTI": {
+      "ERROR_LOADING_METADATA": "Error loading event metadata. Please try again later.",
+      "SERIES_TITLE": "View Series",
+      "UPLOAD_TITLE": "Upload event",
+      "LOADING": "Loading…",
+      "NEW_UPLOAD": "Upload new event",
+      "EDIT_UPLOAD": "Edit event",
+      "CURRENT_JOBS": "Today's jobs",
+      "PRESENTER": "Presenter",
+      "PRESENTER_DESCRIPTION": "Video file for the presenter track",
+      "CAPTION": "Captions",
+      "CAPTION_DESCRIPTION": "Caption file; VTT format is supported",
+      "UPLOAD": "Upload",
+      "UPLOADING": "Uploading",
+      "EDIT": "Save",
+      "EDIT_TITLE": "Edit event",
+      "NO_OPTION_SELECTED": "No option selected",
+      "EDITING": "Saving…",
+      "SELECT_OPTION": "Select option",
+      "JOB_TITLE": "Title",
+      "JOB_STATUS": "Status",
+      "UPLOAD_SUCCESS": "Upload succeded!",
+      "UPLOAD_FAILURE": "Upload failed!",
+      "UPLOAD_FAILURE_DESCRIPTION": "Please try again later.",
+      "EDIT_SUCCESS": "Edit succeeded, beginning republishing.",
+      "EDIT_FAILURE": "Edit failed!",
+      "COPY_SUCCESS": "Copying started…",
+      "COPY_SUCCESS_DESCRIPTION": "Please wait a moment…",
+      "GENERIC_ERROR": "Error: {{message}}",
+      "DELETION_SUCCESS": "Event deletion successful",
+      "DELETION_SUCCESS_DESCRIPTION": "The event will be removed from the list in a few moments…",
+      "EVENT_LOCKED": "The event is currently being worked on. Please wait until making further changes…",
+      "DELETION_FAILURE": "Event deletion failed",
+      "DELETION_FAILURE_DESCRIPTION": "Please try again later…",
+      "RESULT_HEADING": "Results {{range.begin}}-{{range.end}} of {{total}}",
+      "CONFIRM_DELETION": "Really delete this event?",
+      "COPY_TO_SERIES": "Copy event to series",
+      "SELECT_COPY_TARGET": "Select destination series",
+      "COPY": "Copy",
+      "COPY_IN_PROGRESS": "Starting copy…",
+      "CREATOR": "by {{creator}}"
+   },
    "LANGUAGES": {
       "ARABIC": "Arabic",
       "DANISH": "Danish",
@@ -49,6 +92,7 @@
       }
    },
    "CONFIRMATIONS": {
+      "EMBEDDING_CODE": "Embedding code has been copied to the clipboard:",
       "CONTINUE_ACTION": "Are you sure you want to continue?",
       "METADATA": {
          "NOTICE": {
@@ -64,7 +108,10 @@
          "NAME": "Name"
       },
       "ACTIONS": {
-         "CONFIRMATION": "Confirmation"
+         "CONFIRMATION": "Confirmation",
+         "SHOW": {
+            "EMBEDDING_CODE": "Embedding code"
+         }
       },
       "WARNINGS": {
          "SERIES_HAS_EVENTS": "This series does contain events. Deleting the series will not delete the events.",
@@ -82,7 +129,7 @@
       "USERS_GUIDE": "User's Guide",
       "DOCUMENTATION": "Documentation",
       "REST_DOC": "REST API Docs",
-      "HOTKEY_CHEAT_SHEET": "Keyboard Shortcuts"
+      "HOTKEY_CHEAT_SHEET": "Keyboard shortcuts"
    },
    "NOTIFICATIONS": {
       "ACL_ADDED": "The access policy has been created",
@@ -102,7 +149,7 @@
       "GROUP_NOT_SAVED": "The group could not be saved",
       "GROUP_DELETED": "The group has been deleted",
       "GROUP_NOT_DELETED": "The group could not be deleted",
-      "ACCESS_DENIED": "Access denied. You're not allowed to view this page",
+      "ACCESS_DENIED": "Access denied. You are not allowed to view this page",
       "SERIES_ADDED": "The series has been created",
       "SERIES_NOT_SAVED": "The series could not be saved",
       "EVENTS_CREATED": "The event has been created",
@@ -113,9 +160,9 @@
       "EVENTS_NOT_UPDATED": "The event could not be saved",
       "EVENTS_NOT_UPDATED_ID": "The event {{ id }} could not be saved",
       "EVENTS_NOT_UPDATED_ALL": "None of the events could be saved",
-      "EVENTS_PROCESSING_ACTION_RETRY": "Processing resumed.",
+      "EVENTS_PROCESSING_ACTION_RETRY": "Processing being resumed...",
       "EVENTS_PROCESSING_ACTION_NOT_RETRY": "Processing could not be resumed.",
-      "EVENTS_PROCESSING_ACTION_NONE": "Processing aborted.",
+      "EVENTS_PROCESSING_ACTION_NONE": "Processing being aborted...",
       "EVENTS_PROCESSING_ACTION_NOT_NONE": "Processing could not be aborted.",
       "EVENTS_PROCESSING_ACTION_STOP": "Processing stopped.",
       "EVENTS_PROCESSING_ACTION_NOT_STOP": "Processing could not be stopped.",
@@ -244,7 +291,7 @@
             "EVENTS": "events",
             "HEADER": "This page allows you to edit scheduled events grouped by weekdays. The inputs fields are pre-filled in case all scheduled events have the same value for a specific field. Otherwise, the input fields are left blank. Leaving input fields blank means that the respective values should not be changed.",
             "METADATA": "Metadata",
-            "SCHEDULING": "{{ weekday }} ({{ noEvents }} {{ eventOrEvents }})"
+            "SCHEDULING": "{{ weekday }} ({{ noEvents }} {{ eventOrEvents }} )"
          }
       },
       "EDIT_EVENTS_METADATA": {
@@ -505,6 +552,7 @@
                "LOCATION": "Filter for this location",
                "DETAILS": "Open event details",
                "DELETE": "Delete event",
+               "EMBEDDING_CODE": "Embedding code",
                "EDITOR": "Open video Editor",
                "EDITOR_NEEDS_CUTTING": "Open video Editor (a comment indicates that cutting the video has been requested)",
                "COMMENTS": "View comments",
@@ -549,7 +597,7 @@
             },
             "PUBLICATIONS": {
                "CAPTION": "Publications",
-               "NO_PUBLICATIONS_AVAILABLE": "This event has not been published",
+               "NO_PUBLICATIONS_AVAILABLE": "This event has no publications",
                "PUBLICATION_DESCRIPTION": "This event has been published to the following publication channels:",
                "LIVE_EVENT_NOT_IN_PROGRESS": "This event is not currently in progress",
                "CUSTOM": "Custom",
@@ -654,7 +702,7 @@
                   }
                },
                "CATALOGS": {
-                  "TITLE": "Catalogs",
+                  "TITLE": "Catalogues",
                   "CAPTION": "Catalogs",
                   "ID": "Id",
                   "TYPE": "Type",
@@ -662,7 +710,7 @@
                   "TAGS": "Tags",
                   "LINK": "Link",
                   "DETAILS": {
-                     "TITLE": "Catalog details",
+                     "TITLE": "Catalogue details",
                      "CAPTION": "Catalog details",
                      "ID": "Id",
                      "TYPE": "Type",
@@ -689,7 +737,7 @@
                      "MIMETYPE": "Mimetype",
                      "URL": "URL",
                      "RECORDING_DATE": "Recording date",
-                     "FLAVOR": "Flavor",
+                     "FLAVOR": "Flavour",
                      "TAGS": "Tags",
                      "DURATION": "Duration",
                      "STREAM_AUDIO": "Audio streams",
@@ -820,7 +868,7 @@
                }
             },
             "SCHEDULING": {
-               "CAPTION": "Scheduling configuration",
+               "CAPTION": "Participation status",
                "PLACEHOLDER": {
                   "PRESENTERS": "Presenter(s)"
                }
@@ -983,7 +1031,7 @@
                   "TEXT": "You can optionally use themes to brand your videos. Themes may define bumper and trailer videos, watermarks and title slides including metadata."
                },
                "TITLE": "Theme",
-               "LABEL": "Please select a theme",
+               "LABEL": "No theme",
                "EMPTY": "No theme found"
             },
             "SUMMARY": {
@@ -1073,7 +1121,7 @@
    },
    "RECORDINGS": {
       "NAVIGATION": {
-         "LOCATIONS": "Locations"
+         "LOCATIONS": "Location"
       },
       "ACTIONS": {
          "EXPORT": "Export",
@@ -1081,7 +1129,7 @@
       },
       "RECORDINGS": {
          "TABLE": {
-            "CAPTION": "Locations",
+            "CAPTION": "Location",
             "TITLE": "UID",
             "NAME": "Name",
             "LOCATION": "Location",
@@ -1338,22 +1386,22 @@
             },
             "BUMPER": {
                "CAPTION": "Bumper (begin)",
-               "DESCRIPTION": "Predefined video that is appended to the beginning of a recording.",
+               "DESCRIPTION": "Predefined video prepended to a recording.",
                "ACTIVE": "Active"
             },
             "TRAILER": {
                "CAPTION": "Bumper (end)",
-               "DESCRIPTION": "Predefined video that is appended to the end of a recording.",
+               "DESCRIPTION": "Predefined video appended to a recording.",
                "ACTIVE": "Active"
             },
             "TITLE": {
                "CAPTION": "Title",
-               "DESCRIPTION": "Predefined slide including descriptive metadata appended to the beginning or end of a recording.",
+               "DESCRIPTION": "Predefined slide (including descriptive metadata) affixed to the beginning or end of a recording.",
                "ACTIVE": "Active"
             },
             "WATERMARK": {
                "CAPTION": "Watermark",
-               "DESCRIPTION": "Semi-transparent image that is overlaid on every frame of the recording.",
+               "DESCRIPTION": "Semi-transparent image overlaid on every frame of the recording.",
                "ACTIVE": "Active"
             },
             "USAGE": {
@@ -1441,7 +1489,7 @@
                "BOTTOM_RIGHT": "Bottom right",
                "UPLOAD": "Upload",
                "POSITION": "Watermark position and preview",
-               "FILEUPLOAD_DESCRIPTION": "File should have an alpha channel (transparent background). Acceptable file types are: .PNG, .GIF, .SVG, .WEBP",
+               "FILEUPLOAD_DESCRIPTION": "File should have an alpha channel (transparent background). Acceptable file types are: . PNG, . GIF, . SVG, . WEBP",
                "UPLOAD_LABEL": "Upload image",
                "UPLOAD_BUTTON": "Upload"
             },
@@ -1620,7 +1668,7 @@
          "DESCRIPTION": "You can unselect tracks to exclude them from further processing. Please note that you need to (re-)publish the event to actually apply the changes.",
          "NOTIFICATION": {
             "NO_VIDEO_TRACK_SELECTED": "You must enable at least one video track",
-            "NO_AUDIO_TRACK_SELECTED": "You must enable at least one audio track"
+            "NO_AUDIO_TRACK_SELECTED": "You must enable at least one video track"
          },
          "TRACK": {
             "HEADER": "Track"
